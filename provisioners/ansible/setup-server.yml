@@ -122,6 +122,11 @@
     tags:
       - pre_task
 
+  - name: install podman package
+    yum:
+      name: podman
+      state: latest
+
   - name: install chrony
     include_role:
       name: oasis_roles.system.chrony
